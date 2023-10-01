@@ -50,10 +50,12 @@ body {
     color: #242424;
 }
 
-.page-title-wrap{
+.page-mob-nav{
     display: none;
 }
-
+.page-title-mob{
+    display: none;
+}
 
 @media (max-width: 1199px) {
     .ant-layout-header {
@@ -69,16 +71,26 @@ body {
         max-width: 370px;
         margin: 0 auto;
     }
-    .page-title-wrap{
+    .page-mob-nav{
         display: flex;
         margin: 20px auto;
         align-items: center;
         justify-content: space-between;
     }
-    .page-title-wrap-back-button{
+    .page-mob-nav-back-button{
         cursor: pointer;
     }
-    .page-title-wrap-burger{
+    .page-mob-nav-wrap-burger{
         cursor: pointer;
+    }
+    .page-title-mob{
+        display: block;
+        padding: 0 0 18px;
+        font-size: 32px;
+        font-weight: 600;
+        line-height: 16px;
+        letter-spacing: 0em;
+        text-align: left;
+        color: #242424;
     }
 }

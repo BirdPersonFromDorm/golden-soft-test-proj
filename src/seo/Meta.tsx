@@ -23,17 +23,20 @@ const Meta: FC<PropsWithChildren<IMeta>> = ({title, pageTitle, children}) => {
                 <div className="page-title">
                     {pageTitle}
                 </div>
-                <div className="page-title-wrap">
-                    <div className="page-title-wrap-back-button">
+                <div className="page-mob-nav">
+                    <div className="page-mob-nav-back-button">
                         <MobHeaderArrowToLeftBlockIcon/>
                     </div>
                     <Link href={'/'}>
                         <Image src="/logo.png" alt="" width={234} height={19}/>
                     </Link>
-                    <div className="page-title-wrap-burger" onClick={toggleBurgerMenu}>
+                    <div className="page-mob-nav-wrap-burger" onClick={toggleBurgerMenu}>
                         <MobHeaderBurgerIcon/>
                         <AppBurgerMenu visible={burgerMenuVisible} onClose={toggleBurgerMenu} />
                     </div>
+                </div>
+                <div className="page-title-mob">
+                    {pageTitle}
                 </div>
                 {children}
             </main>

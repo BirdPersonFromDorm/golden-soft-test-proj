@@ -12,8 +12,8 @@ const StockPage = ({data, isLoading}) => {
     }
 
     const sliceDesc = (text: string) =>{
-        if (text.length > 140){
-            return text.slice(0,140) + "..."
+        if (text.length > 40){
+            return text.slice(0,40) + "..."
         } else {
             return text
         }
@@ -29,8 +29,7 @@ const StockPage = ({data, isLoading}) => {
                                 <Image
                                     src={item.src}
                                     alt=""
-                                    width={188}
-                                    height={236}
+                                    layout="fill"
                                     objectFit="cover"
                                 />
                             </div>
