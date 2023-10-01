@@ -1,0 +1,63 @@
+.dropDownButtonWrap {
+    position: relative;
+
+    &Main {
+        cursor: pointer;
+        width: 140px;
+        height: 32px;
+
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+
+        h5 {
+            flex: 1;
+
+            font-size: 16px;
+            font-weight: 500;
+            line-height: 16px;
+            letter-spacing: 0em;
+            text-align: left;
+
+            color: #999999;
+            padding: 2px;
+
+        }
+    }
+
+    &DropList {
+        z-index: 10000;
+        top: 35px;
+        min-width: 125px;
+
+        position: absolute;
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        flex-direction: column;
+        background-color: white;
+        padding: 5px 10px;
+
+        box-shadow: 0px 4px 40px rgba(0, 0, 0, 0.25);
+        border-radius: 10px;
+
+        li {
+            padding: 5px 0;
+            cursor: pointer;
+            font-style: normal;
+            font-weight: 400;
+            font-size: 12px;
+            line-height: 140%;
+
+            letter-spacing: 0.02em;
+
+            color: #999999;
+            text-transform: uppercase;
+        }
+
+        li:hover {
+            color: #32afe1;
+        }
+    }
+}
